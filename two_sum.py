@@ -11,4 +11,4 @@ class Solution(object):
                 num_map[num] = i
                 
                 
-        return nummap
+        return num_map
