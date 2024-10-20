@@ -1,11 +1,7 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        num_map = {}  # Create an empty hash map
+    
+        num_map = {} 
 
         for i, num in enumerate(nums):
             complement = target - num
