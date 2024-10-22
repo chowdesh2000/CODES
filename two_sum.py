@@ -1,14 +1,8 @@
-class Solution(object):
-    def twoSum(nums, target):
-    
-        num_map = {} 
-
-        for i, num in enumerate(nums):
-            complement = target - num
-            if complement in num_map:
-                return [num_map[complement], i]
-            else:
-                num_map[num] = i
-                
-                
-        return num_map
+l=list(map(int, input().split()))
+t=int(input()) 
+for i in range(0,len(l),1): 
+    temp=t-l[i]
+    for j in range(i+1,len(l),1):
+        if l[j]==temp:
+            print(i," ",j)
+            break
